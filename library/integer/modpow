@@ -1,0 +1,12 @@
+//mのn乗のmod計算
+long long modpow(long long m, long long n, long long mod){
+    long long ans = 1;
+    while(n>0){
+        if(n%2==1){
+            cur=cru*m%mod;
+        }
+        m=m*m%mod;
+        n/=2;
+    }
+    return cur;
+}
